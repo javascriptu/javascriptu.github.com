@@ -84,6 +84,27 @@ header {
   }
 }
 
+#tout-javascript {
+  text-align:center;
+  h1 {
+    margin:1em;
+  }
+}
+
+#playground-container {
+  height:0px;
+  overflow:hidden;
+}
+
+.CodeMirror {
+  margin-left: 120px;
+  width: 740px;
+  background-color:hsl(0, 0%, 98%);
+  height: 100px;
+  box-shadow: inset 0 0 7px 0px black;
+  opacity:.8;
+}
+
 #content {
   background:#fff;
 
@@ -143,6 +164,8 @@ header {
         font-weight:normal;
         padding:8px 0;
         margin-bottom:10px;
+        font-family: 'Graduate', cursive;
+
       }
       p {
         font-family:"Lucida Console", Monaco, monospace;
@@ -222,6 +245,12 @@ header {
   }
 }
 
+.rotate {
+  -webkit-transition-duration: 5s;
+  -webkit-transform:rotate(360deg);
+  -moz-transition-duration: 5s;
+  -moz-transform : rotate(360deg);
+}
 
 footer {
   height:210px;
@@ -229,8 +258,4 @@ footer {
   min-width:942px;
 
   background:url("../img/bgDark.png");
-
 }
-
-
-

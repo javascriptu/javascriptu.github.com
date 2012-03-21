@@ -52,11 +52,9 @@
     <div class="row"><h2 id="ribbon" class="span5"><img src="img/sandiegojs-logo.png" alt="SanDiegoJS presents"></h2></div>
 
     <!-- <div class="row"><h1 id="title" class="brand span9 offset2">JavaScript<u>U</u></h1></div> -->
-    <div class="row"><h1 id="title" class="brand span9 offset2"><img src="img/JSULogo.png"></h1></div>
-
+    <div class="row"><h1 id="title" class="brand span12"><img src="img/JSULogo.png"></h1></div>
 
     <!--<div class="row"><h2 id="subtitle" class="span8 offset4">A series of web workshops</h2></div>-->
-
   </div>
 </header>
 
@@ -88,17 +86,32 @@
     <div class="span10 offset1">
       <h1>You're invited to learn with us.</h1>
 
-      <p class="span9">
+      <p class="span8">
         From the basics to the advanced, from jQuery to backbone, from the DOM to <em>whatever you choose</em>
       </p>
 
-      <p class="span9">
+      <p class="span8">
         Anything is fair game and you call the shots. The course topics alter based on the votes of the attendees.
         You
         literally learn what you come here to learn.
       </p>
     </div>
   </div>
+
+  <div id="tout-javascript" class="row tout">
+    <div id="javascript-front" class="span12">
+      <button id="expose-playground" class="btn-large btn-info">Want a taste?</button>
+      <button id="execute-playground" class="btn-large btn-success" style="display:none">Run this code</button>
+    </div>
+  </div>
+
+  <div id="playground-container" class="row">
+    <textarea id="javascript-playground" class="span12">
+jQuery('body').addClass('striped1');
+jQuery('#content').animate({opacity : .3}).animate({opacity : 1})
+    </textarea>
+  </div>
+
   <div class="row tout">
     <div class="span10 offset1">
       <h1>Why? <small>Why not?</small></h1>
@@ -159,6 +172,15 @@
       </ul>
     </div>
   </div>
+  <br>
+  <div class="row tout">
+    <div class="span10 offset1">
+      <h3>Want JavaScriptU in your city?</h3>
+      <p class="span9">
+        Contact us **here** and let us know if you want to know how you can help spread JavaScript in your city!
+      </p>
+    </div>
+  </div>
 </div>
 
 <footer>
@@ -175,6 +197,10 @@
 <!-- scripts concatenated and minified via build script -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/plugins.js"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/codemirror.js"></script>
+<script src="js/codemirror-javascript.js"></script>
+<link rel="stylesheet" href="css/codemirror.css">
 <script src="js/script.js"></script>
 <!-- end scripts -->
 
