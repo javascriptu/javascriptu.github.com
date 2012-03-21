@@ -2,7 +2,7 @@
 
 */
 
-var editor;
+var editor,evalError;
 
 $(function(){
 
@@ -13,6 +13,13 @@ $(function(){
     mode: "text/javascript"
   });
 
+  //setup error popup
+  $('.CodeMirror').popover({
+    title     : 'Oops!',
+    content   : showError,
+    trigger   : 'manual',
+    placement : 'bottom'
+  })
 });
 
 function exposePlayground() {
@@ -20,11 +27,18 @@ function exposePlayground() {
   $('#playground-container').animate({height:'100px'});
 }
 
+function showError() {
+  return evalError;
+}
+
 function executePlayground() {
   var script = editor.getValue();
   try {
     eval(script);
+    $('.CodeMirror').popover('hide');
   } catch(e) {
+    evalError = e.toString();
+    $('.CodeMirror').popover('show');
     if (console) console.log(e.toString());
   }
 }
