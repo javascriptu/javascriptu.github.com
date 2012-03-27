@@ -71,8 +71,9 @@ header {
     li {
       float:left;
       width:250px;
-      img {
-        border-radius:25px;
+      margin-bottom:2px;
+      .avatar {
+        border-radius:5px;
         width:40px;
         height:40px;
       }
@@ -84,6 +85,12 @@ header {
         &:hover {
           text-decoration: none;
           color:@brandColor;
+        }
+      }
+      .gplus,.twitter {
+        img {
+          width:16px;
+          height:16px
         }
       }
     }
@@ -291,12 +298,10 @@ footer {
   min-width:942px;
 
   background:url("../img/bgDark.png");
-}
-
-footer {
   color:#ccc;
   p {
     font-size:12px;
     margin-top:150px;
   }
 }
+
