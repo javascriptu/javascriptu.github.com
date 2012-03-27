@@ -19,7 +19,9 @@ $(function(){
     content   : showError,
     trigger   : 'manual',
     placement : 'bottom'
-  })
+  });
+
+  setTimeout(showSocial,750);
 });
 
 function exposePlayground() {
@@ -41,4 +43,8 @@ function executePlayground() {
     $('.CodeMirror').popover('show');
     if (console) console.log(e.toString());
   }
+}
+
+function showSocial() {
+  $('#social-buttons').fadeIn();
 }

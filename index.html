@@ -1,9 +1,12 @@
-<!doctype html><!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]--><!--[if IE 8]>
-<html class="no-js lt-ie9"
-      lang="en"> <![endif]--><!-- Consider adding a manifest.appcache: h5bp.com/d/Offline --><!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -13,6 +16,19 @@
   <meta name="description" content="JavaScript University, San Diego's finest web instruction">
 
   <meta name="viewport" content="width=device-width">
+
+  <!-- OpenGraph/Facebook -->
+  <meta property="og:title" content="JavaScript University" />
+  <meta property="og:type" content="non_profit" />
+  <meta property="og:url" content="http://javascriptu.org/" />
+  <meta property="og:image" content="http://javascriptu.org/apple-touch-icon.png" />
+  <meta property="og:site_name" content="JavaScriptU" />
+  <meta property="fb:admins" content="798269243" />
+
+  <!-- G+ -->
+  <meta itemprop="name" content="JavaScript University">
+  <meta itemprop="description" content="Join JavaScriptU in San Diego and learn the best of modern web development">
+  <meta itemprop="image" content="http://javascriptu.org/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
@@ -39,10 +55,19 @@
     <div class="row"><h1 id="title" class="brand span12"><img src="img/JSULogo.png"></h1></div>
 
     <!--<div class="row"><h2 id="subtitle" class="span8 offset4">A series of web workshops</h2></div>-->
+    <div class="row">
+      <div class="span12" id="social-buttons" style="height:25px;text-align: right;display:none;margin-top:10px;">
+          <div class="g-plusone" data-size="medium" data-href="http://javascriptu.org/"></div>
+          <div class="fb-like" style="vertical-align: top" data-href="http://javascriptu.org/" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://javascriptu.org/" data-text="Check out JavaScriptU in San Diego" data-via="javascriptu">Tweet</a>
+      </div>
+    </div>
+
   </div>
+
 </header>
 
-<div id="content" class="container" data-spy="content">
+<section id="content" class="container" data-spy="content">
   <img src="img/jsuheader.jpg" width="960" height="300" alt="JSU-IMG">
 
   <div class="row tout">
@@ -129,7 +154,7 @@ $('#you-can-code').slideDown();
       </p>
     </div>
   </div>
-  <section class="row">
+  <div class="row">
     <div id="info-panes-container" class="span12 gradient">
       <div id="info-panes" class="row">
         <div id="info-pane-where" class="info-pane span3 offset1">
@@ -165,7 +190,7 @@ $('#you-can-code').slideDown();
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <div id="tout-who" class="row tout">
     <div class="span10 offset1">
       <h1>Who are we? <small>"awesome!"</small></h1>
@@ -190,7 +215,7 @@ $('#you-can-code').slideDown();
       </p>
     </div>
   </div>
-</div>
+</section>
 
 <footer>
   <div class="container">
@@ -208,7 +233,31 @@ $('#you-can-code').slideDown();
 <script src="js/codemirror.min.js"></script>
 <link rel="stylesheet" href="css/codemirror.css">
 <script src="js/script.js"></script>
+<!-- G+ +1 -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
 
+<!-- Facebook like -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Twitter follow button -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Google Analytics -->
 <script>
   var _gaq = [
     ['_setAccount', 'UA-30345299-1'],
