@@ -49,7 +49,7 @@
 
 <header id="header">
   <div class="container">
-    <div class="row"><h2 id="ribbon" class="span5"><img src="img/sandiegojs-logo.png" alt="SanDiegoJS presents"></h2></div>
+    <div class="row"><h2 id="ribbon" class="span5"><a href="http://sandiegojs.org/"><img src="img/sandiegojs-logo.png" alt="SanDiegoJS presents"></a></h2></div>
 
     <!-- <div class="row"><h1 id="title" class="brand span9 offset2">JavaScript<u>U</u></h1></div> -->
     <div class="row"><h1 id="title" class="brand span12"><img src="img/JSULogo.png"></h1></div>
@@ -67,7 +67,7 @@
 
       <p class="span9">
         6 <em>free</em>, interactive, in-person workshops dedicated to the most important language of the decade,
-        <strong>JavaScript</strong>!
+        <strong>JavaScript</strong>.
       </p>
     </div>
   </div>
@@ -76,8 +76,7 @@
   <div class="row">
     <div id="missionStatement" class="span12">
       <h3 id="statement" class="span10 offset1">
-        Our mission is to develop San Diego's tech community into a<br>hub for talented and forward thinking web
-        developers.
+        Our mission is to share knowledge freely and promote<br>talented and forward thinking web development.
       </h3>
     </div>
   </div>
@@ -86,15 +85,31 @@
     <div class="span10 offset1">
       <h1>You're invited to learn with us.</h1>
 
-      <p class="span8">
+      <p class="span9">
         From the basics to the advanced, from jQuery to backbone, from the DOM to <em>whatever you choose</em>
       </p>
 
-      <p class="span8">
+      <p class="span9">
         Anything is fair game and you call the shots. The course topics alter based on the votes of the attendees.
         You
         literally learn what you come here to learn.
       </p>
+
+    </div>
+  </div>
+  <div class="row tout">
+    <div class="span10 offset1">
+      <h2>Learn how to set up a solid foundation</h2>
+      <p class="span9">
+        Use modern JavaScript libraries to give yourself a running head start. Technologies like
+        <a href="http://requirejs.org/">requirejs</a>,
+        <a href="http://pivotal.github.com/jasmine/">Jasmine</a>,
+        <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
+        <a href="http://jquery.com">jQuery</a>,
+        Twitter's <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>, and more!
+      </p>
+      <ul class="span10 offset1" id="sampleTech">
+      </ul>
     </div>
   </div>
 
@@ -107,9 +122,16 @@
 
   <div id="playground-container" class="row">
     <textarea id="javascript-playground" class="span12">
-$('body').addClass('striped1');
-$('#content').animate({opacity : .3}).animate({opacity : 1});
+$('#you-can-code').slideDown();
     </textarea>
+  </div>
+
+  <div id="you-can-code" class="row tout" style="display:none;">
+    <div class="span8 alert alert-success">
+      <h1>Congratulations!</h1>
+      <p>That wasn't that hard was it? Try changing the above to</p>
+      <code>$('p').toggleClass('rotate');</code>
+    </div>
   </div>
 
   <div class="row tout">
@@ -127,13 +149,15 @@ $('#content').animate({opacity : .3}).animate({opacity : 1});
       <div id="info-panes" class="row">
         <div id="info-pane-where" class="info-pane span3 offset1">
           <h3 class="info-header">WHERE?</h3>
-          <address>
+          <a href="http://maps.google.com/maps?q=5775+Morehouse+Drive+&hl=en&ll=32.895732,-117.195861&spn=0.007072,0.013937&sll=32.895872,-117.195875&sspn=0.001768,0.003484&hnear=5775+Morehouse+Dr,+San+Diego,+California+92121&t=m&z=17">
+            <address>
             <span class="company">Qualcomm</span>
-            <span class="building">Building N</span>
+            <span class="street">5775 Morehouse Drive</span>
             <span class="city">San Diego</span>
             <span class="state">California</span>
             <span class="zip">92121</span>
           </address>
+          </a>
         </div>
         <div id="info-pane-when" class="info-pane span3">
           <h3 class="info-header">WHEN?</h3>
@@ -152,7 +176,7 @@ $('#content').animate({opacity : .3}).animate({opacity : 1});
           <h3 class="info-header">REGISTER.</h3>
           <h4>Next Workshop</h4>
           <p>4.10.2012</p>
-          <button class="btn-large btn-primary">Script With Us</button>
+          <a href="http://www.eventbrite.com/event/3151697813" class="btn-large btn-primary">Script With Us</a>
         </div>
       </div>
     </div>
@@ -162,7 +186,7 @@ $('#content').animate({opacity : .3}).animate({opacity : 1});
       <h1>Who are we? <small>"awesome!"</small></h1>
       <ul>
         <li><a href="http://jarrodoverson.com/"><img src="http://www.gravatar.com/avatar/74be2e435d69a5827de7b5d33e7b343d"> - Jarrod Overson</a></li>
-        <li><a href="http://jesscarlos.com/"><img src="http://0.gravatar.com/avatar/469539a23b9381fe025a87c7507e7847"> - Jess Carlos</a></li>
+        <li><a href="http://jesscarlos.com/"><img src="http://www.gravatar.com/avatar/469539a23b9381fe025a87c7507e7847"> - Jess Carlos</a></li>
         <li><img src="http://0.gravatar.com/avatar/00e1dd94340133b9daf6e291fb766266"> - John Cozen</li>
         <li><img src="http://0.gravatar.com/avatar/00e1dd94340133b9daf6e291fb766266"> - Keeya Jones</li>
         <li><img src="http://0.gravatar.com/avatar/00e1dd94340133b9daf6e291fb766266"> - Eric Hall</li>
@@ -177,7 +201,7 @@ $('#content').animate({opacity : .3}).animate({opacity : 1});
     <div class="span10 offset1">
       <h3>Want JavaScriptU in your city?</h3>
       <p class="span9">
-        Contact us **here** and let us know if you want to know how you can help spread JavaScript in your city!
+        Contact us <a href="mailto:contact@javascriptu.org">here</a> and let us know if you want to know how you can help spread JavaScript in your city!
       </p>
     </div>
   </div>

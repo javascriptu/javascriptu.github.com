@@ -23,7 +23,7 @@ $(function(){
 });
 
 function exposePlayground() {
-  $(this).fadeOut(function(){$('#execute-playground').fadeIn()});
+  $(this).fadeOut(250,function(){$('#execute-playground').fadeIn(250)});
   $('#playground-container').animate({height:'100px'});
 }
 

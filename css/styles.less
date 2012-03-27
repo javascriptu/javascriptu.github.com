@@ -1,12 +1,18 @@
 @import "bootstrap/bootstrap.less";
 
 @baseFontSize: 18px;
+@brandColor :hsl(208,99%,55%);
 
 body {
   background:url('../img/bgLight.png');
 }
 
-@brandColor :hsl(208,99%,55%);
+a {
+  color:darken(@brandColor, 20%);
+  &:visited { color:darken(@brandColor, 20%); }
+  &:hover { color:darken(@brandColor, 20%); }
+}
+
 
 .striped1 {
   background: #a8a8a8;
@@ -29,16 +35,13 @@ body {
     font-family: Graduate, serif;
     text-decoration: none;
     font-weight:bold;
-    color:white;
     margin-left:1px;
-    text-shadow:hsl(208,99%,55%) -1px -1px,hsl(208,99%,55%) -1px 1px,hsl(208,99%,55%) 1px -1px,hsl(208,99%,55%) 1px 1px,
-                #fff -2px -2px,#fff -2px 2px,#fff 2px -2px,#fff 2px 2px;
   }
 }
 
 header {
   min-width:942px;
-  height:210px;
+  height:200px;
   text-align:center;
   background-color: #333;
   background:url("../img/bgDark.png");
@@ -121,7 +124,6 @@ header {
 
   position:relative;
   margin:-30px auto;
-  padding-top:2em;
   min-height:900px;
   border:1px solid #999;
 
@@ -185,6 +187,72 @@ header {
   }
 }
 
+#you-can-code {
+  .alert {
+    margin-left:160px;
+  }
+  code {
+    text-align:center;
+  }
+}
+
+#info-pane-where {
+  .info-header {
+  }
+  address {
+    font-family:"Lucida Console", Monaco, monospace !important;
+    color:white;
+    &:hover {
+      color:lighten(@brandColor,10%);
+      cursor:pointer;
+    }
+    text-decoration:none !important;
+    .company {
+      display:block;
+      font-size:33px;
+      line-height:33px;
+    }
+    .street {
+      display:block;
+      font-size:15px;
+      line-height:33px;
+
+    }
+    .city {
+      display:block;
+      font-size:33px;
+      line-height:35px;
+
+    }
+    .state {
+
+    }
+    .zip {
+
+    }
+  }
+}
+#info-pane-when {
+  .info-header {
+  }
+  p {
+    margin-top:10px;
+    font-size:1.2em;
+    letter-spacing:-1px;
+    line-height:1.2em;
+  }
+  ul {
+    list-style-type: none;
+    margin:0;
+    font-family:"Lucida Console", Monaco, monospace;
+    line-height:1.1em;
+    .next-dates {
+      font-weight:bold;
+      color:@brandColor;
+    }
+
+  }
+}
 #info-pane-register {
   .info-header {
     color:lighten(@brandColor, 30%) !important;
@@ -204,55 +272,8 @@ header {
     font-size:1.5em;
     letter-spacing:-1px;
   }
-}
-#info-pane-when {
-  .info-header {
-  }
-  p {
-    margin-top:10px;
-    font-size:1.2em;
-    letter-spacing:-1px;
-    line-height:1.2em;
-  }
-  ul {
-    list-style-type: none;
-    margin:0;
-    font-family:"Lucida Console", Monaco, monospace;
-    .next-dates {
-      font-weight:bold;
-      color:@brandColor;
-    }
-
-  }
-}
-#info-pane-where {
-  .info-header {
-  }
-  address {
-    font-family:"Lucida Console", Monaco, monospace;
-    .company {
-      display:block;
-      font-size:33px;
-      line-height:33px;
-    }
-    .building {
-      display:block;
-      font-size:22px;
-      line-height:33px;
-
-    }
-    .city {
-      display:block;
-      font-size:33px;
-      line-height:35px;
-
-    }
-    .state {
-
-    }
-    .zip {
-
-    }
+  a {
+    line-height:46px;
   }
 }
 
