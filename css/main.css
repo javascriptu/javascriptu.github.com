@@ -663,6 +663,6 @@ header #subtitle{color:#fff;}
 #info-pane-register .info-header{color:#b3dbff !important;}
 #info-pane-register h4{width:100%;background-color:#9c9c9c;margin-top:-7px;font-size:1.1em;padding:7px 0;color:white;font-weight:normal;}
 #info-pane-register p{margin-top:20px;font-size:1.5em;letter-spacing:-1px;}
-#info-pane-register a{line-height:46px;}
+#info-pane-register a{line-height:46px;}#info-pane-register a:visited{color:white;}
 .rotate{-webkit-transition-duration:5s;-webkit-transform:rotate(360deg);-moz-transition-duration:5s;-moz-transform:rotate(360deg);}
 footer{height:210px;text-align:center;min-width:942px;background:url("../img/bgDark.png");color:#ccc;}footer p{font-size:12px;margin-top:150px;}
