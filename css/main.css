@@ -643,6 +643,7 @@ header #subtitle{color:#fff;}
 #tout-who ul li a{color:black;}#tout-who ul li a:visited{color:black;}
 #tout-who ul li a:hover{text-decoration:none;color:#1b94fe;}
 #tout-who ul li .gplus img,#tout-who ul li .twitter img{width:16px;height:16px;}
+#times{color:#1B94FE;font-size:18px;}
 #tout-sampleTopics h4{font-size:18px;font-family:Helvetica,sans-serif;}
 #tout-javascript{text-align:center;}#tout-javascript h1{margin:1em;}
 #playground-container{height:0px;overflow:hidden;}
@@ -658,8 +659,8 @@ header #subtitle{color:#fff;}
 #info-pane-where address .company{display:block;font-size:33px;line-height:33px;}
 #info-pane-where address .street{display:block;font-size:15px;line-height:33px;}
 #info-pane-where address .city{display:block;font-size:33px;line-height:35px;}
-#info-pane-when p{margin-top:10px;font-size:1.2em;letter-spacing:-1px;line-height:1.2em;}
-#info-pane-when ul{list-style-type:none;margin:0;font-family:"Lucida Console",Monaco,monospace;line-height:1.1em;}#info-pane-when ul .next-dates{font-weight:bold;color:#1b94fe;}
+#info-pane-when p{margin-top:10px;margin-bottom:5px;font-size:1.2em;letter-spacing:-1px;line-height:1.2em;}
+#info-pane-when ul{list-style-type:none;margin:0;font-family:"Lucida Console",Monaco,monospace;font-size:16px;line-height:1.1em;}#info-pane-when ul .next-dates{font-weight:bold;}
 #info-pane-register .info-header{color:#b3dbff !important;}
 #info-pane-register h4{width:100%;background-color:#9c9c9c;margin-top:-7px;font-size:1.1em;padding:7px 0;color:white;font-weight:normal;}
 #info-pane-register p{margin-top:20px;font-size:1.5em;letter-spacing:-1px;}
